@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
+@import "tailwindcss";
+
+
+
+.navbar-btn::after {
+    @apply content-[''] absolute bottom-0 left-0 w-full h-[2px] bg-black origin-left scale-x-0 transition-transform duration-200;
+}
+
+.navbar-btn:hover::after {
+  @apply scale-x-100;
+}
+
