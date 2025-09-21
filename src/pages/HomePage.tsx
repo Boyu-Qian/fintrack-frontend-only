@@ -69,121 +69,122 @@ const HomePage = () => {
           style={{ width: "100vw", height: "100vh" }}
         >
           <Zenitho />
-          <div className="z-19 h-[75vh] container absolute grid grid-cols-4 px-4 gap-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-            <h2 className="p-3 md:p-0 text-md md:text-2xl font-bold text-black text-left col-span-4 md:col-span-3 row-span-2 md:row-span-1">
-              Tired of wondering where your money goes? Our expense tracking
-              website makes it simple to manage your spending, track income, and
-              set financial goals — all in one place.
-            </h2>
-            <div className="col-span-4 md:flex md:flex-col md:justify-center md:items-center md:col-start-3 md:col-start-4 md:row-start-1 md:row-end-4 mb-3 md:mb-0">
-              <p className="hidden md:block text-lg text-black mb-6">
-                Take Control of Your Finances Today
-              </p>
-              <button className="bg-black text-nowrap text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300">
-                <Link to="/signup">Get Started</Link>
-              </button>
-            </div>
-            <div className="bg-gray-300/50 hover:bg-transparent transition-all group duration-300 overflow-hidden m-4 md:m-0 rounded-4xl relative mx-auto md:mx-0 col-span-4 row-span-4 md:col-span-2 md:row-span-2 overflow-hidden">
-              <img
-                className="group-hover:scale-125 transition-all duration-300 rounded-2xl h-full w-full "
-                src={Transparent1}
-                alt=""
-              />
-              <button className="group absolute top-0 right-0 m-4 p-1 bg-white border border-s rounded-full text-nowrap flex items-center justify-center justify-center hover:bg-black-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 25 25"
-                  fill="currentColor"
-                  className="w-5 h-5 text-gray-600 group-hover:rotate-45 transition-transform duration-300 ease-in-out"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.69 18.56a.75.75 0 11-1.06-1.06L17.19 5.25H8.25a.75.75 0 010-1.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span
-                  className="flex-shrink-0 w-0 group-hover:w-28 transition-all duration-300 overflow-hidden text-nowrap
+          <div className="z-19 h-[100vh] container">
+            <div className="h-3/4 w-full absolute grid grid-cols-4 px-4 gap-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+              <h2 className="p-3 md:p-0 text-md md:text-2xl font-bold text-black text-left col-span-4 md:col-span-3 row-span-2 md:row-span-1">
+                Tired of wondering where your money goes? Our expense tracking
+                website makes it simple to manage your spending, track income,
+                and set financial goals — all in one place.
+              </h2>
+              <div className="col-span-4 md:flex md:flex-col md:justify-center md:items-center md:col-start-3 md:col-start-4 md:row-start-1 md:row-end-4 mb-3 md:mb-0">
+                <p className="hidden md:block text-lg text-black mb-6">
+                  Take Control of Your Finances Today
+                </p>
+                <button className="bg-black text-nowrap text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300">
+                  <Link to="/signup">Get Started</Link>
+                </button>
+              </div>
+              <div className="bg-gray-300/50 hover:bg-transparent transition-all group duration-300 overflow-hidden m-4 md:m-0 rounded-4xl relative mx-auto md:mx-0 col-span-4 row-span-4 md:col-span-2 md:row-span-2 overflow-hidden">
+                <img
+                  className="group-hover:scale-125 transition-all duration-300 rounded-2xl h-full w-full "
+                  src={Transparent1}
+                  alt=""
+                />
+                <button className="group absolute top-0 right-0 m-4 p-1 bg-white border border-s rounded-full text-nowrap flex items-center justify-center justify-center hover:bg-black-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    fill="currentColor"
+                    className="w-5 h-5 text-gray-600 group-hover:rotate-45 transition-transform duration-300 ease-in-out"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.69 18.56a.75.75 0 11-1.06-1.06L17.19 5.25H8.25a.75.75 0 010-1.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    className="flex-shrink-0 w-0 group-hover:w-28 transition-all duration-300 overflow-hidden text-nowrap
                          opacity-0 group-hover:opacity-100 ease-in-out"
-                >
-                  <span className="font-semibold">
-                    <Link to="/signup">Get Started</Link>
+                  >
+                    <span className="font-semibold">
+                      <Link to="/signup">Get Started</Link>
+                    </span>
                   </span>
-                </span>
-              </button>
-            </div>
-            <div className="bg-gray-300/50 hover:bg-transparent transition-all duration-300 group overflow-hidden rounded-4xl relative hidden md:block col-span-1 row-span-1 overflow-hidden">
-              {/* <video
+                </button>
+              </div>
+              <div className="bg-gray-300/50 hover:bg-transparent transition-all duration-300 group overflow-hidden rounded-4xl relative hidden md:block col-span-1 row-span-1 overflow-hidden">
+                {/* <video
                 className="rounded-2xl h-full w-full object-fill"
                 autoPlay
                 muted
               >
                 <source src={Video4} />
               </video> */}
-              <img
-                className="group-hover:scale-75 transition-all duration-300 rounded-2xl h-full w-full "
-                src={Transparent2}
-                alt=""
-              />
-              <button className="group absolute top-0 right-0 m-4 p-1 bg-white border border-s rounded-full text-nowrap flex items-center justify-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 25 25"
-                  fill="currentColor"
-                  className="w-5 h-5 text-gray-600 group-hover:rotate-45 transition-transform duration-300 ease-in-out"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.69 18.56a.75.75 0 11-1.06-1.06L17.19 5.25H8.25a.75.75 0 010-1.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span
-                  className="flex-shrink-0 w-0 group-hover:w-28 transition-all duration-300 overflow-hidden text-nowrap
+                <img
+                  className="group-hover:scale-75 transition-all duration-300 rounded-2xl h-full w-full "
+                  src={Transparent2}
+                  alt=""
+                />
+                <button className="group absolute top-0 right-0 m-4 p-1 bg-white border border-s rounded-full text-nowrap flex items-center justify-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    fill="currentColor"
+                    className="w-5 h-5 text-gray-600 group-hover:rotate-45 transition-transform duration-300 ease-in-out"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.69 18.56a.75.75 0 11-1.06-1.06L17.19 5.25H8.25a.75.75 0 010-1.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    className="flex-shrink-0 w-0 group-hover:w-28 transition-all duration-300 overflow-hidden text-nowrap
                          opacity-0 group-hover:opacity-100 ease-in-out"
-                >
-                  <span className="font-semibold">
-                    <Link to="/signup">Get Started</Link>
+                  >
+                    <span className="font-semibold">
+                      <Link to="/signup">Get Started</Link>
+                    </span>
                   </span>
-                </span>
-              </button>
-            </div>
-
-            <div className="bg-gray-300/50 hover:bg-transparent transition-all duration-300 group overflow-hidden rounded-4xl relative hidden md:block col-span-1 row-span-1 overflow-hidden">
-              {/* <video
+                </button>
+              </div>
+              <div className="bg-gray-300/50 hover:bg-transparent transition-all duration-300 group overflow-hidden rounded-4xl relative hidden md:block col-span-1 row-span-1 overflow-hidden">
+                {/* <video
                 className="rounded-2xl h-full w-full object-fill"
                 autoPlay
                 muted
               >
                 <source src={Video4} />
               </video> */}
-              <img
-                className="group-hover:scale-75 transition-all duration-300 rounded-2xl h-full w-full "
-                src={Transparent3}
-                alt=""
-              />
-              <button className="group absolute top-0 right-0 m-4 p-1 bg-white border border-s rounded-full text-nowrap flex items-center justify-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-5 h-5 text-gray-600 group-hover:rotate-45 transition-transform duration-300 ease-in-out"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.69 18.56a.75.75 0 11-1.06-1.06L17.19 5.25H8.25a.75.75 0 010-1.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span
-                  className="flex-shrink-0 w-0 group-hover:w-28 transition-all duration-300 overflow-hidden text-nowrap
+                <img
+                  className="group-hover:scale-75 transition-all duration-300 rounded-2xl h-full w-full "
+                  src={Transparent3}
+                  alt=""
+                />
+                <button className="group absolute top-0 right-0 m-4 p-1 bg-white border border-s rounded-full text-nowrap flex items-center justify-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-5 h-5 text-gray-600 group-hover:rotate-45 transition-transform duration-300 ease-in-out"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.69 18.56a.75.75 0 11-1.06-1.06L17.19 5.25H8.25a.75.75 0 010-1.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span
+                    className="flex-shrink-0 w-0 group-hover:w-28 transition-all duration-300 overflow-hidden text-nowrap
                          opacity-0 group-hover:opacity-100 ease-in-out"
-                >
-                  <span className="font-semibold">
-                    <Link to="/signup">Get Started</Link>
+                  >
+                    <span className="font-semibold">
+                      <Link to="/signup">Get Started</Link>
+                    </span>
                   </span>
-                </span>
-              </button>
+                </button>
+              </div>
             </div>
           </div>
         </div>
