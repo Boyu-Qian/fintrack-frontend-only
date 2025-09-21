@@ -69,8 +69,8 @@ const HomePage = () => {
           style={{ width: "100vw", height: "100vh" }}
         >
           <Zenitho />
-          <div className="z-19 h-[75vh] container absolute grid grid-cols-4 gap-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-            <h2 className="p-3 md:p-0 text-2xl font-bold text-black text-left col-span-4 md:col-span-3 row-span-2 md:row-span-1">
+          <div className="z-19 h-[75vh] container absolute grid grid-cols-4 px-4 gap-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+            <h2 className="p-3 md:p-0 text-md md:text-2xl font-bold text-black text-left col-span-4 md:col-span-3 row-span-2 md:row-span-1">
               Tired of wondering where your money goes? Our expense tracking
               website makes it simple to manage your spending, track income, and
               set financial goals — all in one place.
@@ -83,14 +83,7 @@ const HomePage = () => {
                 <Link to="/signup">Get Started</Link>
               </button>
             </div>
-            <div className="bg-gray-300/50 hover:bg-transparent transition-all group duration-300 overflow-hidden rounded-4xl relative mx-auto md:mx-0 col-span-4 row-span-4 md:col-span-2 md:row-span-2 overflow-hidden">
-              {/* <video
-                className="rounded-2xl h-full w-full object-fill"
-                autoPlay
-                muted
-              >
-                <source src={Video4} />
-              </video> */}
+            <div className="bg-gray-300/50 hover:bg-transparent transition-all group duration-300 overflow-hidden m-4 md:m-0 rounded-4xl relative mx-auto md:mx-0 col-span-4 row-span-4 md:col-span-2 md:row-span-2 overflow-hidden">
               <img
                 className="group-hover:scale-125 transition-all duration-300 rounded-2xl h-full w-full "
                 src={Transparent1}
@@ -199,7 +192,7 @@ const HomePage = () => {
           style={{ width: "100vw", height: "100vh" }}
         >
           <Tranquiluxe />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-left h-[70vh] container">
+          <div className="absolute px-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-left h-[70vh] container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col justify-start items-start p-4">
                 <p className="text-sm md:text-lg font-bold text-black mb-2 md:mb-4 text-left">
@@ -221,7 +214,7 @@ const HomePage = () => {
               </div>
               <div className="flex justify-center items-center rounded-3xl overflow-hidden w-full">
                 <img
-                  className="rounded-3xl overflow-hidden w-[70%] md:w-full"
+                  className="rounded-3xl overflow-hidden w-[80%] md:w-full"
                   src={Tracking}
                   alt=""
                 />

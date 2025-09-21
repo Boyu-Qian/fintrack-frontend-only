@@ -9,10 +9,10 @@ const DashboardNav = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    dispatch(logout());
     toast.success("Logout successful!", { autoClose: 1000, theme: "colored" });
+    navigate("/", { replace: true });
     setTimeout(() => {
-      navigate("/", { replace: true });
+      dispatch(logout());
     }, 1000);
   };
   return (

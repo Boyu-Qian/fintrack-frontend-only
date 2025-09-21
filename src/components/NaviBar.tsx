@@ -32,13 +32,13 @@ const NaviBar = forwardRef<HTMLElement, NaviBarProps>(({ scrolled }, ref) => {
       <div className="flex items-center justify-between">
         <Link
           to="/login"
-          className="relative text-sm bg-[#F5F7EE] hover:bg-[#BCCFEF] px-4 py-1 rounded-md text-black mx-2"
+          className="relative text-sm bg-[#F5F7EE] hover:bg-[#BCCFEF] px-2 md:px-4 py-1 rounded-md text-black mx-1 md:mx-2"
         >
           Login
         </Link>
         <Link
           to="/signup"
-          className="hidden md:block relative text-white bg-black rounded-md px-4 py-1 text-sm text-black mx-2"
+          className="relative text-white bg-black rounded-md px-2 md:px-4 py-1 text-sm text-black mx-1 md:mx-2"
         >
           Get Started
         </Link>

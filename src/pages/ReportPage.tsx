@@ -262,7 +262,8 @@ const ReportPage = () => {
                           .map(
                             (value, index) => value - reportAmountExpense[index]
                           )
-                          .reduce((acc, ele) => (acc += ele), 0)}
+                          .reduce((acc, ele) => (acc += ele), 0)
+                          .toFixed(2)}
                       </p>
                     </div>
                     <div className="w-[70%] p-4">
@@ -289,10 +290,9 @@ const ReportPage = () => {
                       <h2>Expense</h2>
                       <p className="my-auto">
                         $
-                        {reportAmountExpense.reduce(
-                          (acc, ele) => (acc += ele),
-                          0
-                        )}
+                        {reportAmountExpense
+                          .reduce((acc, ele) => (acc += ele), 0)
+                          .toFixed(2)}
                       </p>
                     </div>
                     <div className="w-[70%] p-4">
@@ -317,10 +317,9 @@ const ReportPage = () => {
                       <h2>Income</h2>
                       <p className="my-auto">
                         $
-                        {reportAmountIncome.reduce(
-                          (acc, ele) => (acc += ele),
-                          0
-                        )}
+                        {reportAmountIncome
+                          .reduce((acc, ele) => (acc += ele), 0)
+                          .toFixed(2)}
                       </p>
                     </div>
                     <div className="w-[70%] p-4">

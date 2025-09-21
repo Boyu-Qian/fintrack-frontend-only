@@ -24,8 +24,8 @@ export interface CalendarRequest {
 export const transactionsApi = createApi({
     reducerPath:"transactionApi",
     baseQuery:fetchBaseQuery({
-        baseUrl:import.meta.env.VITE_TRANSACTIONS_API_URL,
-
+        baseUrl:"//localhost:8080/api/transactions",
+        
     }),
     tagTypes:['Transaction'],
     endpoints: (builder) => ( {

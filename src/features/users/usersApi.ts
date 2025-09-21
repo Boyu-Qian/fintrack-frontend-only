@@ -26,7 +26,7 @@ export type AuthResponse = AuthSuccess | AuthError
 export const usersApi = createApi({
     reducerPath:'userApi',
     baseQuery:fetchBaseQuery({
-        baseUrl:import.meta.env.VITE_USERS_API_URL,
+        baseUrl:"//localhost:8080/api/users",
         credentials: "include"
     }),
     tagTypes:['User'],
