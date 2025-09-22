@@ -26,7 +26,7 @@ export type AuthResponse = AuthSuccess | AuthError
 export const usersApi = createApi({
     reducerPath:'userApi',
     baseQuery:fetchBaseQuery({
-        baseUrl:"//localhost:8080/api/users",
+        baseUrl:"https://www.fintrack.site/api/users",
         credentials: "include"
     }),
     tagTypes:['User'],

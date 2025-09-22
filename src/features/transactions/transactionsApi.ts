@@ -24,7 +24,7 @@ export interface CalendarRequest {
 export const transactionsApi = createApi({
     reducerPath:"transactionApi",
     baseQuery:fetchBaseQuery({
-        baseUrl:"//localhost:8080/api/transactions",
+        baseUrl:"https://www.fintrack.site/api/transactions",
         
     }),
     tagTypes:['Transaction'],
