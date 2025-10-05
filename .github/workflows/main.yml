@@ -35,7 +35,7 @@ jobs:
             rm -rf /var/www/html/*
 
       - name: Deploy to VPS
-        uses: appleboy/ssh-action@master
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
