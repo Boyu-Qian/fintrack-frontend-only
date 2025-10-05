@@ -10,7 +10,7 @@ const NaviBar = forwardRef<HTMLElement, NaviBarProps>(({ scrolled }, ref) => {
   return (
     <nav
       ref={ref}
-      className={`z-20 fixed top-0 left-1/2 -translate-x-1/2 container mt-4 rounded-xl ${
+      className={`z-20  fixed top-0 left-1/2 -translate-x-1/2 container mt-4 rounded-xl ${
         scrolled ? "bg-gray-300/50" : "bg-transparent"
       } hover:bg-white/50 flex items-center justify-between px-2 py-1 transition-all duration-300 `}
     >
