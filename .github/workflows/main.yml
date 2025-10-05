@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Clean VPS folder
-        uses: appleboy/ssh-action@v0.1.6
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
