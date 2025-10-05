@@ -35,7 +35,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           script: |
-            rm -rf /var/www/my-frontend/*
+            rm -rf /var/www/html/*
 
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v0.1.6
@@ -45,4 +45,4 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           source: "build/"
-          target: "/var/www/my-frontend"
+          target: "/var/www/html"
