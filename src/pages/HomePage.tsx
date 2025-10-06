@@ -70,7 +70,7 @@ const HomePage = () => {
         >
           <Zenitho />
           <div className="z-19 h-[100vh] container">
-            <div className="h-3/4 w-full absolute grid grid-cols-4 px-4 gap-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+            <div className="h-3/4 container absolute grid grid-cols-4 px-4 gap-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
               <h2 className="p-3 md:p-0 text-md md:text-2xl font-bold text-black text-left col-span-4 md:col-span-3 row-span-2 md:row-span-1">
                 Tired of wondering where your money goes? Our expense tracking
                 website makes it simple to manage your spending, track income,
