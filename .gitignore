@@ -26,3 +26,4 @@ dist-ssr
 *.sw?
 nginx.conf
 nginx 2.conf
+Dockerfile
