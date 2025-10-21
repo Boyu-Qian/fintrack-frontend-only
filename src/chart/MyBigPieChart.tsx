@@ -40,7 +40,7 @@ export const PieChart: React.FC<PieChartProps> = ({
       },
     ],
   };
-
+  console.log(data);
   const options = {
     responsive: true,
     maintainAspectRatio: false,
