@@ -9,8 +9,7 @@ interface AuthState {
 }
 
 const initialState: AuthState = {
-  isAuthenticated:
-    !!localStorage.getItem("token") && !!localStorage.getItem("user"),
+  isAuthenticated: !!localStorage.getItem("user"),
   user: localStorage.getItem("user")
     ? JSON.parse(localStorage.getItem("user") as string)
     : null,
