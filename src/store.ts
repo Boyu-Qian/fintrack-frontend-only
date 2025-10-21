@@ -4,7 +4,7 @@ import authReducer from "./store/authSlice";
 import { transactionsApi } from "./features/transactions/transactionsApi";
 
 const preloadedAuthState = {
-  isAuthenticated: !!localStorage.getItem("token"),
+  isAuthenticated: !!localStorage.getItem("user"),
   user: localStorage.getItem("user")
     ? JSON.parse(localStorage.getItem("user") as string)
     : null,
