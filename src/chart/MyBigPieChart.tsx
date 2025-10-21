@@ -21,6 +21,16 @@ export const PieChart: React.FC<PieChartProps> = ({
   width,
   title,
 }) => {
+  const sum = data.reduce((acc, ele) => acc + ele, 0);
+
+  if (!sum) {
+    return (
+      <div className="flex items-center justify-center h-full text-gray-500 text-lg font-medium">
+        Record your transaction to display this Pie Chart
+      </div>
+    );
+  }
+
   const chartData = {
     labels,
     datasets: [
