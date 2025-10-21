@@ -27,7 +27,6 @@ const LoginPage = () => {
 
   useEffect(() => {
     if (isSuccess) {
-      console.log("id" in data);
       if ("id" in data) {
         dispatch(
           loginSuccess({
